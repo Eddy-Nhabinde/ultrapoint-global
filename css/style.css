@@ -475,7 +475,7 @@ ul {
 @media only screen and (min-width: 1200px) and (max-width: 3640px) {
   /* line 245, ../../01 cl html template/New folder/May 2019/179 Medisen Medical/179 Medisen Medical -Template/sass/_common.scss */
   .container {
-    max-width: 1170px;
+    max-width: 1270px;
   }
 }
 
@@ -4073,7 +4073,7 @@ ul {
 
 /* line 2, ../../01 cl html template/New folder/May 2019/179 Medisen Medical/179 Medisen Medical -Template/sass/_footer.scss */
 .footer-area {
-  background-color: #f3f6f7;
+  background-color: #F3F3F3;
 }
 
 @media (max-width: 991px) {
@@ -4234,7 +4234,7 @@ ul {
 
 /* line 153, ../../01 cl html template/New folder/May 2019/179 Medisen Medical/179 Medisen Medical -Template/sass/_footer.scss */
 .footer-area .copyright_part {
-  background-color: #0d1820;
+  background-color: #7F14B7;
   padding: 26px 0px;
 }
 
@@ -6146,6 +6146,11 @@ h6 {
   text-transform: capitalize;
 }
 
+.theContainer{
+  background: #073495;
+background: linear-gradient(90deg, rgba(7, 52, 149, 0) 36%, rgba(0, 212, 255, 0.4) 100%);
+}
+
 /* line 58, ../../01 cl html template/New folder/May 2019/179 Medisen Medical/179 Medisen Medical -Template/sass/_breadcrumb.scss */
 .breadcrumb .breadcrumb_iner .breadcrumb_iner_item span {
   margin: 0px 5px;
@@ -6159,7 +6164,7 @@ h6 {
 
 /* line 2, ../../01 cl html template/New folder/May 2019/179 Medisen Medical/179 Medisen Medical -Template/sass/_footer.scss */
 .footer-area {
-  background-color: #f3f6f7;
+  background-color: #F3F3F3;
 }
 
 @media (max-width: 991px) {
@@ -6320,7 +6325,7 @@ h6 {
 
 /* line 153, ../../01 cl html template/New folder/May 2019/179 Medisen Medical/179 Medisen Medical -Template/sass/_footer.scss */
 .footer-area .copyright_part {
-  background-color: #0d1820;
+  background-color: #7F14B7;
   padding: 26px 0px;
 }
 
@@ -6357,6 +6362,10 @@ h6 {
 .footer-area .copyright_part .footer-social a [class^="ti-"],
 .footer-area .copyright_part .footer-social a [class*=" ti-"] {
   line-height: 0;
+}
+
+.footer-text{
+  color: white ;
 }
 
 @media (max-width: 991px) {
