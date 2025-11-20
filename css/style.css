@@ -6424,3 +6424,14 @@ h6 {
   font-family: Playfair Display, Sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
+
+#language-select {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    appearance: auto;                 /* ← ESSENCIAL */
+    -webkit-appearance: auto;
+}

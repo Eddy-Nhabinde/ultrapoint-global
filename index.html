@@ -57,18 +57,25 @@
               >
                 <ul class="navbar-nav align-items-center">
                   <li class="nav-item active">
-                    <a class="nav-link links" href="index.html">Inicio</a>
+                    <a class="nav-link links" href="index.html" data-i18n="home" >Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link links" href="about.html">Sobre</a>
+                    <a class="nav-link links" href="about.html" data-i18n="about">Sobre</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link links" href="services.html">Serviços</a>
+                    <a class="nav-link links" href="services.html" data-i18n="services">Serviços</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link links" href="contact.html">Contacto</a>
+                    <a class="nav-link links" href="contact.html" data-i18n="contact">Contacto</a>
                   </li>
+
+                                  <li class="nav-item language-selector">
+  <select id="language-select" onchange="changeLanguage(this.value)" class="form-select form-select-sm">
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+      </select>
+                   </li>
                 </ul>
               </div>
             </nav>
@@ -93,7 +100,7 @@
               alt="First slide"
             />
             <div class="imcaption">
-              <h5>Garantimos o Funcionamento da Tecnologia que Salva Vidas</h5>
+              <h5 data-i18n="guarantee">Garantimos o Funcionamento da Tecnologia que Salva Vidas</h5>
               <p
                 style="
                   margin-left: 200px;
@@ -102,6 +109,7 @@
                   width: 40%;
                   text-align: left;
                 "
+                data-i18n="guarantee_text"
               >
                 Somos especialistas em montagem e manutenção de equipamentos
                 hospitalares, assegurando eficiência, precisão e segurança em
@@ -117,7 +125,7 @@
               alt="Third slide"
             />
             <div class="imcaption">
-              <h5>Soluções de Climatização que Inspiram Confiança</h5>
+              <h5 data-i18n="climate_solutions">Soluções de Climatização que Inspiram Confiança</h5>
               <p
                 style="
                   margin-left: 200px;
@@ -126,10 +134,9 @@
                   width: 40%;
                   text-align: left;
                 "
+                data-i18n="climate_solutions_text"
               >
-                A nossa equipa técnica é especializada em montagem e manutenção
-                de equipamentos de ar condicionado. Trabalhamos com precisão e
-                compromisso em cada projeto.
+                
               </p>
             </div>
           </div>
@@ -141,7 +148,7 @@
               alt="Third slide"
             />
             <div class="imcaption">
-              <h5>Segurança Inteligente com Tecnologia de Ponta</h5>
+              <h5 data-i18n="smart_security">Segurança Inteligente com Tecnologia de Ponta</h5>
               <p
                 style="
                   margin-left: 200px;
@@ -150,10 +157,8 @@
                   width: 40%;
                   text-align: left;
                 "
+                data-i18n="smart_security_text"
               >
-                Implementamos sistemas de videovigilância modernos e confiáveis,
-                projetados para oferecer máxima proteção e controlo em tempo
-                real.
               </p>
             </div>
           </div>
@@ -165,7 +170,7 @@
               alt="Third slide"
             />
             <div class="imcaption">
-              <h5>Potência e Confiabilidade em Cada Gota</h5>
+              <h5 data-i18n="power_reliability">Potência e Confiabilidade em Cada Gota</h5>
               <p
                 style="
                   margin-left: 200px;
@@ -174,6 +179,7 @@
                   width: 40%;
                   text-align: left;
                 "
+                data-i18n="power_reliability_text"
               >
                 Nossas soluções em bombeamento garantem fluxo constante e
                 operação segura. Eficiência, durabilidade e qualidade que você
@@ -188,7 +194,7 @@
             data-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only" data-i18n="previous">Previous</span>
           </a>
           <a
             class="carousel-control-next"
@@ -197,7 +203,7 @@
             data-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only" data-i18n="next">Next</span>
           </a>
         </div>
       </div>
@@ -217,14 +223,14 @@
           <div class="col-lg-6 col-xl-6">
             <div class="banner_text">
               <div class="banner_text_iner">
-                <h1 class="title">
+                <h1 class="title" style="color: white" data-i18n="driving_innovation">
                   Impulsionando inovação, entregando excelência
                 </h1>
-                <p style="font-size: 17px; color: #000000c7">
+                <p  style="font-size: 17px; color: #000000c7" data-i18n="driving_innovation_text_1">
                   Da visão à criação, do presente ao futuro, somos a ponte que
                   conecta inovação, qualidade, excelência e responsabilidade.
                 </p>
-                <p style="font-size: 17px; color: #000000c0">
+                <p style="font-size: 17px; color: #000000c0" data-i18n="driving_innovation_text_2">
                   No princípio da inovação, criamos caminhos onde antes havia
                   silêncio. A terra encontra a tecnologia, o engenho floresce e
                   o futuro se ergue em cada solução que nasce para transformar o
@@ -261,18 +267,18 @@
           <div class="row">
             <div class="col-xl-4 col-md-4 align-self-center">
               <div class="single_feature_text">
-                <h2>Por que confiar na UltraPoint?</h2>
-                <p>
-                  A UG-UltraPoint é sinónimo de inovação, qualidade e
+                <h2 data-i18n="why_trust_ultrapoint">Por que confiar na UltraPoint?</h2>
+                <p data-i18n="why_trust_ultrapoint_text_1">
+                  A UltraPoint é sinónimo de inovação, qualidade e
                   compromisso. Com uma equipa de especialistas dedicados,
                   garantimos soluções personalizadas que atendem às necessidades
                   específicas de cada cliente.
                 </p>
-                <p>
+                <p data-i18n="why_trust_ultrapoint_text_2">
                   Não somos apenas prestadores de serviços, somos parceiros na
                   sua jornada de transformação digital.
                 </p>
-                <a href="/services" class="btn_2">Serviços</a>
+                <a href="/services" class="btn_2" data-i18n="services">Serviços</a>
               </div>
             </div>
             <div class="col-lg-8 col-md-8">
@@ -282,13 +288,12 @@
                     <div class="single_feature">
                       <div class="single_feature_part">
                         <div class="titleContainer">
-
                           <span class="single_feature_icon"
-                          ><img src="img/icon/puzzle.png" alt=""
+                            ><img src="img/icon/puzzle.png" alt=""
                           /></span>
-                          <h4>Inovação que impulsiona resultados</h4>
+                          <h4 data-i18n="innovation_drives_results">Inovação que impulsiona resultados</h4>
                         </div>
-                        <p>
+                        <p data-i18n="innovation_drives_results_text">
                           Investimos em tecnologia e conhecimento para oferecer
                           soluções modernas, eficientes e sustentáveis,
                           adaptadas às necessidades de cada cliente.
@@ -300,13 +305,12 @@
                     <div class="single_feature">
                       <div class="single_feature_part">
                         <div class="titleContainer">
-
                           <span class="single_feature_icon"
-                          ><img src="img/icon/settings.png" alt=""
+                            ><img src="img/icon/settings.png" alt=""
                           /></span>
-                          <h4>Excelência em cada detalhe</h4>
+                          <h4 data-i18n="excellence_in_every_detail">Excelência em cada detalhe</h4>
                         </div>
-                        <p>
+                        <p data-i18n="excellence_in_every_detail_text">
                           A nossa equipa de engenheiros atua com rigor técnico e
                           paixão por resultados, garantindo qualidade, segurança
                           e desempenho em todos os projetos.
@@ -317,13 +321,13 @@
                   <div class="col-lg-6 col-sm-6">
                     <div class="single_feature">
                       <div class="single_feature_part">
-                        <div class="titleContainer" >
+                        <div class="titleContainer">
                           <span class="single_feature_icon">
                             <img src="img/icon/globe.png" alt="" />
                           </span>
-                          <h4>Orgulho em ser 100% moçambicana</h4>
+                          <h4 data-i18n="pride_in_being_100_percent_mozambican">Orgulho em ser 100% moçambicana</h4>
                         </div>
-                        <p>
+                        <p data-i18n="pride_in_being_100_percent_mozambican_text">
                           Somos uma empresa construída por talento nacional,
                           comprometida em contribuir para o desenvolvimento do
                           país com soluções inteligentes e sustentáveis.
@@ -336,11 +340,11 @@
                       <div class="single_feature_part">
                         <div class="titleContainer">
                           <span class="single_feature_icon"
-                          ><img src="img/icon/shakehands.png" alt=""
+                            ><img src="img/icon/shakehands.png" alt=""
                           /></span>
-                          <h4>Mais do que clientes, construímos relações</h4>
+                          <h4 data-i18n="more_than_clients_building_relationships">Mais do que clientes, construímos relações</h4>
                         </div>
-                        <p>
+                        <p data-i18n="more_than_clients_building_relationships_text">
                           Trabalhamos lado a lado com os nossos parceiros,
                           oferecendo acompanhamento contínuo e soluções sob
                           medida que geram valor real e duradouro.
@@ -367,11 +371,11 @@
             </div>
             <div class="col-md-6 col-lg-5">
               <div class="our_ability_member_text">
-                <h2>
+                <h2 data-i18n="technology_that_saves_lives">
                   Tecnologia que salva vidas, com manutenção que garante
                   resultados.
                 </h2>
-                <p>
+                <p data-i18n="technology_that_saves_lives_text">
                   Da venda à manutenção preventiva, oferecemos soluções
                   completas para hospitais e clínicas. Com técnicos certificados
                   e peças originais, asseguramos o funcionamento contínuo e
@@ -379,11 +383,10 @@
                 </p>
                 <ul>
                   <li>
-                    <span class="ti-heart-broken"></span>Instalações de Classe
-                    Mundial
+                    <span class="ti-heart-broken" ></span> <h5 data-i18n="world_class_installations" ></h5>
                   </li>
                   <li>
-                    <span class="ti-headphone-alt"></span>Suporte 24 Horas
+                    <span class="ti-headphone-alt"></span> <h5 data-i18n="24_hour_support"></h5>
                   </li>
                 </ul>
               </div>
@@ -399,54 +402,59 @@
           <div class="row justify-content-between align-items-center">
             <div class="col-md-5 col-lg-5" style="">
               <div class="our_ability_member_text">
-                <h2>Tecnologia que protege, conecta e evolui.</h2>
-                <p>
-                  A UG-UltraPoint Global oferece soluções inovadoras em sistemas
+                <h2 data-i18n="technology_that_protects_connects_and_evolves">Tecnologia que protege, conecta e evolui.</h2>
+                <p data-i18n="technology_that_protects_connects_and_evolves_text">
+                  A UltraPoint Global oferece soluções inovadoras em sistemas
                   inteligentes, segurança eletrónica e integração tecnológica. O
                   nosso compromisso é garantir desempenho, confiança e
                   modernidade em cada instalação.
                 </p>
                 <ul>
-                  <li><span class="ti-mouse"></span>Tecnologia Moderna</li>
-                  <li><span class="ti-package"></span>Técnicos Experientes</li>
+                  <li><span class="ti-mouse"></span> <h5 data-i18n="modern_technology"></h5></li>
+                  <li><span class="ti-package"></span> <h5 data-i18n="experienced_technicians"></h5></li>
                 </ul>
               </div>
             </div>
             <div class="col-md-6 col-lg-6">
               <div class="our_ability_img">
-                <img src="img/seguranca-eletronica.webp" alt="" style="border-radius: 10px;" />
+                <img
+                  src="img/seguranca-eletronica.webp"
+                  alt=""
+                  style="border-radius: 10px"
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
     </div>
-    <footer class="footer-area">
+    
+    
+        <footer class="footer-area">
       <div class="footer section_padding">
         <div class="container">
           <div class="row">
             <div class="col-xl-2 col-sm-4 mb-4 mb-xl-0 single-footer-widget">
               <h4>UG-UltraPoint</h4>
               <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contactos</a></li>
+                <li><a href="#" data-i18n="inicio">Início</a></li>
+                <li><a href="#" data-i18n="about">Sobre</a></li>
+                <li><a href="#" data-i18n="services">Serviços</a></li>
+                <li><a href="#" data-i18n="contact">Contactos</a></li>
               </ul>
             </div>
             <div class="col-xl-2 col-sm-4 mb-4 mb-xl-0 single-footer-widget">
-              <h4>Siga-nos</h4>
+              <h4 data-i18n="follow_us">Siga-nos</h4>
               <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Department</a></li>
-                <li><a href="#"> Online payment</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
               </ul>
             </div>
             <div
               class="col-xl-4 col-sm-8 col-md-8 mb-4 mb-xl-0 single-footer-widget"
             >
-              <h4>Newsletter</h4>
-              <p>Um resumo mensal das últimas notícias, artigos e recursos.</p>
+              <h4 data-i18n="newsletter">Newsletter</h4>
+              <p data-i18n="newsletter_description">Um resumo mensal das últimas notícias, artigos e recursos.</p>
               <div class="form-wrap" id="mc_embed_signup">
                 <form
                   target="_blank"
@@ -506,7 +514,6 @@
         </div>
       </div>
     </footer>
-
     <!-- footer part end-->
 
     <!-- jquery plugins here-->
@@ -537,5 +544,7 @@
     <script src="js/contact.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+        <script src="locales/i18n.js"></script>
+
   </body>
 </html>

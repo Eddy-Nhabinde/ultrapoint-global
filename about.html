@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -57,17 +57,23 @@
               >
                 <ul class="navbar-nav align-items-center">
                   <li class="nav-item active">
-                    <a class="nav-link links" href="index.html">Início</a>
+                    <a class="nav-link links" data-i18n="home" href="index.html">Início</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link links" href="about.html">Sobre</a>
+                    <a class="nav-link links" data-i18n="about" href="about.html">Sobre</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link links" href="services.html">Serviços</a>
+                    <a class="nav-link links" data-i18n="services" href="services.html">Serviços</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link links" href="contact.html">Contacto</a>
+                    <a class="nav-link links" data-i18n="contact" href="contact.html">Contacto</a>
                   </li>
+                  <li class="nav-item language-selector">
+  <select id="language-select" onchange="changeLanguage(this.value)" class="form-select form-select-sm">
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+      </select>
+                   </li>
                 </ul>
               </div>
             </nav>
@@ -84,8 +90,11 @@
           <div class="col-lg-12">
             <div class="breadcrumb_iner">
               <div class="breadcrumb_iner_item">
-                <h2>Sobre</h2>
-                <p>Home<span>/</span>Sobre</p>
+                <h2 data-i18n="about" >Sobre</h2>
+                <p>
+                  <span data-i18n="inicio"></span>
+                  <span>/</span> <span data-i18n="about">Sobre</span>
+                </p>
               </div>
             </div>
           </div>
@@ -105,8 +114,8 @@
           </div>
           <div class="col-md-6 col-lg-5">
             <div class="our_ability_member_text">
-              <h2>Do encontro entre engenho e tecnologia, nasce o futuro.</h2>
-              <p style="font-size: 15px">
+              <h2 data-i18n="future">Do encontro entre engenho e tecnologia, nasce o futuro.</h2>
+              <p style="font-size: 15px" data-i18n="ug_description">
                 UG-UltraPoint Global, é uma empresa jovem, de capital 100%
                 moçambicana, criada com a intenção de dar soluções em áreas de
                 Engenharia, tecnologia e serviços dedicados e integrados.
@@ -127,9 +136,9 @@
                 <span class="single_feature_icon"
                   ><img src="img/missão.png" alt=""
                 /></span>
-                <h4>Missão</h4>
+                <h4 data-i18n="mission" >Missão</h4>
               </div>
-              <p>
+              <p data-i18n="mission_description"> >
                 Fornecer soluções inovadoras e personalizadas, utilizando nossa
                 expertise em engenharia e tecnologia, para impulsionar o
                 crescimento e a eficiência dos clientes, estabelecendo parcerias
@@ -143,9 +152,9 @@
                 <span class="single_feature_icon"
                   ><img src="img/icon/feature_2.svg" alt=""
                 /></span>
-                <h4>Visão</h4>
+                <h4 data-i18n="vision">Visão</h4>
               </div>
-              <p>
+              <p data-i18n="vision_description">
                 Ser líder em soluções de engenharia, tecnologia e serviços,
                 reconhecida por excelência, inovação e qualidade, tornando-se a
                 escolha preferida de clientes e parceiros, e mantendo reputação
@@ -159,9 +168,9 @@
                 <span class="single_feature_icon"
                   ><img src="img/scale.png" alt=""
                 /></span>
-                <h4>Valores</h4>
+                <h4 data-i18n="values">Valores</h4>
               </div>
-              <p>
+              <p data-i18n="values_description">
                 Valorizamos a inovação, a qualidade, a integridade, a
                 responsabilidade, a colaboração e a excelência em nossas ações,
                 buscando sempre superar expectativas e fortalecer relações de
@@ -181,25 +190,24 @@
             <div class="col-xl-2 col-sm-4 mb-4 mb-xl-0 single-footer-widget">
               <h4>UG-UltraPoint</h4>
               <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contactos</a></li>
+                <li><a href="#" data-i18n="inicio">Início</a></li>
+                <li><a href="#" data-i18n="about">Sobre</a></li>
+                <li><a href="#" data-i18n="services">Serviços</a></li>
+                <li><a href="#" data-i18n="contact">Contactos</a></li>
               </ul>
             </div>
             <div class="col-xl-2 col-sm-4 mb-4 mb-xl-0 single-footer-widget">
-              <h4>Siga-nos</h4>
+              <h4 data-i18n="follow_us">Siga-nos</h4>
               <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Department</a></li>
-                <li><a href="#"> Online payment</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
               </ul>
             </div>
             <div
               class="col-xl-4 col-sm-8 col-md-8 mb-4 mb-xl-0 single-footer-widget"
             >
-              <h4>Newsletter</h4>
-              <p>Um resumo mensal das últimas notícias, artigos e recursos.</p>
+              <h4 data-i18n="newsletter">Newsletter</h4>
+              <p data-i18n="newsletter_description">Um resumo mensal das últimas notícias, artigos e recursos.</p>
               <div class="form-wrap" id="mc_embed_signup">
                 <form
                   target="_blank"
@@ -263,7 +271,7 @@
     <!-- footer part end-->
 
     <!-- jquery plugins here-->
-
+<script src="locales/i18n.js"></script>
     <script src="js/jquery-1.12.1.min.js"></script>
     <!-- popper js -->
     <script src="js/popper.min.js"></script>
